@@ -1,0 +1,44 @@
+Z - Zero
+S - increment function on Nat
+the - Explicitly declare a type when it is ambiguous
+  e.g., > the (List _) ["Hello", "There"]
+    vs. > the (Vect _ _) ["Hello", "There"]
+
+
+:total : Check if a function is total.
+  -- Should get used to checking this with every function when you think you are done.    
+
+{-
+  Atom Commands
+ -}
+
+ ^⌘a : Add definition. Adds a skeleton definition for the name under the cursor.
+ ^⌘c : Case split. Splits a definition into pattern-matching clauses for the name under the cursor.
+ ^⌘d : Documentation.
+ ^⌘l : Lift hole. Lifts a hole to the top level as a new function declaration.
+ ^⌘m : Match. Replaces a hold with a case expression that matches on an intermediate result.
+ ^⌘r : Reload. Reloads and type-checks the current buffer.
+ ^⌘s : Search. Searches for an expression that satisfied the type of the hole name under the cursor.
+ ^⌘t : Type-check name. Inspect the type of the symbol under cursor
+ ^⌘<return> : Open a REPL.
+
+ {-
+   vim Commands
+  -}
+
+<LocalLeader>r reload file
+<LocalLeader>t show type
+<LocalLeader>d Create an initial clause for a type declaration.
+<LocalLeader>b Same as \d but for an initial type-class method implementation.
+<LocalLeader>md Same as \d but for a proof clause
+<LocalLeader>c case split
+<LocalLeader>mc make case
+<LocalLeader>w add with clause
+<LocalLeader>e evaluate expression
+<LocalLeader>l make lemma
+<LocalLeader>m add missing clause
+<LocalLeader>f refine item
+<LocalLeader>o obvious proof search
+<LocalLeader>p proof search
+<LocalLeader>i open Idris response window
+<LocalLeader>h show documentation
